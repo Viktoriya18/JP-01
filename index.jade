@@ -1,0 +1,623 @@
+doctype html
+html
+  head   
+      meta(name='viewport', content='width=device-width, initial-scale=1')    
+      link(rel='stylesheet', type='text/css', href='main.css')    
+      link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap.min.css')     
+      link(rel='stylesheet', href='bower_components/bootstrap/dist/css/bootstrap-theme.min.css')
+      link(rel='stylesheet', href='bower_components/font-awesome-4.6.3/css/font-awesome.min.css')
+      link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700,700italic,900,900italic')   
+      script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js')     
+      script(src='bower_components/bootstrap/dist/js/bootstrap.min.js')
+
+body( data-target='.navbar', data-gr-c-s-loaded='true')
+      nav.navbar.navbar-fixed-top.navbar-inverse(role='navigation')
+          .container-fluid
+              .navbar-header
+                button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+                  span.icon-bar                     
+                  span.icon-bar                    
+                  span.icon-bar                
+                a.navbar-brand(href='#section_welcome') Baczewski             
+              #myNavbar.collapse.navbar-collapse
+                ul.nav.navbar-nav.navbar-right
+                  li.active
+                    a(href='#section_welcome') Welcome                     
+                  li
+                    a(href='#section_discover') Discover                    
+                  li
+                    a(href='#section_menu') Menu                     
+                  li
+                    a(href='#section_reservation') Reservation                     
+                  li
+                    a(href='#section_events') Events                   
+                  li
+                    a(href='#section_gallery') Gallery
+      #section_welcome.parallax1
+          .welcome__body
+              .row
+                  .col-sm-10.col-md-6.col-sm-offset-1.col-md-offset-3
+                      .welcome__content
+                        // Title
+                        h3.welcome__title
+                            span Baczewski / 
+                            |  cafe &amp; restaurant
+                        // Heading
+                        h1.welcome__heading
+                            | Baczewski
+                        // Info
+                        p.welcome__info
+                            | Lorem ipsum dolor sit amet, consectetur adipiscing elit. It is not a different kind, nor the souls of the just are corrupted? Of praise, worthy of that excepturi easy, the hardships of those wise men of the moment, she do often like to please?
+                        // Button
+                        .welcome__btn
+                            span.border
+                                a.btn(href='#section_reservation')  Make reservation 
+                      .welcome__footer
+                          ul.welcome__social
+                              li
+                                  a(href='')
+                                      i.fa.fa-facebook.fa-2x
+                              li
+                                  a(href='')
+                                      i.fa.fa-vk.fa-2x
+                              li
+                                  a(href='')
+                                      i.fa.fa-google-plus.fa-2x
+      #section_discover.section_discover
+          .container
+              .col-sm-2.vertical-align-top
+                  p.discover__desc
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit.            
+              .col-sm-4.vertical-align-top
+                  .discover__img
+                      img.img-responsive(src='images/photo_Kulyk_0591_.jpg', alt='...')
+                |             
+              .col-sm-6.vertical-align-middle
+                  .discover__content
+                      h3.section__heading
+                          i Lorem ipsum dolor sit amet                 
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis nisi, consequatur, laborum libero a neque ducimus. Porro rem illum quo nostrum quisquam asperiores, blanditiis, consectetur. Possimus facilis velit, voluptatibus!
+          .container
+              .col-sm-6.vertical-align-middle
+                  .discover__content
+                      h3.section__heading
+                          i Lorem ipsum dolor sit amet                   
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis nisi, consequatur, laborum libero a neque ducimus. Porro rem illum quo nostrum quisquam asperiores, blanditiis, consectetur. Possimus facilis velit, voluptatibus!
+              .col-sm-2.vertical-align-top
+                  p.discover__desc
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              .col-sm-4.vertical-align-top
+                  .discover__img
+                      img.img-responsive(src='images/photo_Kulyk_0675_.jpg', alt='...')
+          .container
+              .col-sm-4.vertical-align-top
+                  .discover__img
+                      img.img-responsive(src='images/site_MG_72671.jpg', alt='...')
+              .col-sm-6.vertical-align-middle
+                  .discover__content
+                      h3.section__heading
+                          i Lorem ipsum dolor sit amet                 
+                      p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias veritatis nisi, consequatur, laborum libero a neque ducimus. Porro rem illum quo nostrum quisquam asperiores, blanditiis, consectetur. Possimus facilis velit, voluptatibus!
+              .col-sm-2.vertical-align-top
+                  p.discover__desc
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+      .parallax2.menu__container
+          #section_menu.section_menu
+                h1.section__heading.text-center
+                  | Our menu
+                .container
+                    ul.nav.nav-tabs
+                        li.nav-item
+                            a.nav-link(href='#mains', role='tab', data-toggle='tab')  Mains 
+                        li.nav-item
+                            a.nav-link(href='#lunch', role='tab', data-toggle='tab')  Lunch 
+                        li.nav-item
+                            a.nav-link(href='#dinner', role='tab', data-toggle='tab')  Dinner 
+                        li.nav-item
+                            a.nav-link(href='#drinks', role='tab', data-toggle='tab')  Drinks 
+                    .tab-content
+                        // Mains
+                        #mains.tab-pane.active(role='tabpanel')
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Lorem ipsum dolor sit amet
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $15                      
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Phasellus non elit in dolor
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $10                       
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Fusce id ante ut arcu consectetur
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $23                     
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | In vel odio eu massa semper
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $35                       
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Fusce sed dolor eget tortor
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $16                      
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Morbi ac est consectetur
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $18                       
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Sed eu erat ut mi suscipit
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $21                       
+                            .col-sm-6.menu-page__item.menu_mains
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Praesent bibendum nisl id
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $10
+                         // Lunch
+                        #lunch.tab-pane.fade(role='tabpanel')
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Integer tempor diam sit
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $18                      
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Integer tristique dolor et
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $16
+                                |                       
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Nulla semper lacus ut nulla
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $28
+                                |                       
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Nullam dictum neque interdum
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $15
+                                |                       
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Morbi dictum sem vel consequat
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $11
+                                |                       
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Donec ac tellus nec leo pharetra
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $30
+                                |                       
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Mauris id nisi et velit faucibus
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $19
+                                |                       
+                            .col-sm-6.menu-page__item.menu_lunch
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Suspendisse quis eros sed justo
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $10
+                        //Dinner
+                        #dinner.tab-pane.fade(role='tabpanel')
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Mauris sed lorem tincidunt
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $15                    
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Nunc sed lorem non orci convallis
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $12                      
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Nunc placerat enim quis odio ultricies
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $11                      
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Vivamus ornare urna a ipsum
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $7                      
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Suspendisse congue dui quis
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $5                     
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Aliquam sed dolor facilisis
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $8                      
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Cras a sem vitae ipsum vehicula
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $17
+                            .col-sm-6.menu-page__item.menu_dinner
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Cras aliquet tellus id mi posuere
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $20
+                        //Drinks
+                        #drinks.tab-pane.fade(role='tabpanel')
+                            .col-sm-6.menu-page__item.menu_drinks
+                                .menu__item
+                                  h4.menu-item__title
+                                    | Cras aliquet tellus id mi posuere
+                                  |                           
+                                  p.menu-item__ingredients
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                  |                           
+                                  .menu-item__price
+                                    | $15                       
+                            .col-sm-6.menu-page__item.menu_drinks
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Nam placerat ligula eget massa
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $22                      
+                            .col-sm-6.menu-page__item.menu_drinks
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Cras in eros id nisi sodales suscipit
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $25                       
+                            .col-sm-6.menu-page__item.menu_drinks
+                                .menu__item
+                                    h4.menu-item__title
+                                      | Vivamus suscipit orci eu urna gravida
+                                    |                           
+                                    p.menu-item__ingredients
+                                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae repellendus nihil minus, eius illum, esse eos quia nostrum impedit hic.
+                                    |                           
+                                    .menu-item__price
+                                      | $18 
+                    .col-sm-12
+                        .menu__featured
+                            .row
+                                .col-sm-12
+                                    h4.menu-featured__heading
+                                      | Featured dishes
+                            .row
+                                .col-sm-3
+                                    .menu-featured__item
+                                        .menu-featured-item__img
+                                            img(src='images/240_F_7038659_e3ZJC6eL9Tw9DTAMX9Gyae6SYDKxYfE2.jpg', alt='...')
+                                          |                     
+                                        h5.menu-featured-item__heading
+                                          | Lorem ipsum dolor                    
+                                        .menu-featured-item__price
+                                          | $15
+                                .col-sm-3
+                                    .menu-featured__item
+                                        .menu-featured-item__img
+                                            img(src='images/240_F_54733557_Ff3Gy3z1H2lsc9FuPCynDrs0NcFERiWW.jpg', alt='...')
+                                          |                     
+                                        h5.menu-featured-item__heading
+                                            | Lorem ipsum dolor
+                                          |                     
+                                        .menu-featured-item__price
+                                          | $10
+                                .col-sm-3
+                                    .menu-featured__item
+                                        .menu-featured-item__img
+                                            img(src='images/240_F_52598544_jdHVgb8gTDJUV0USLnnzDpVlUYNXwb8V.jpg', alt='...')
+                                          |                     
+                                        h5.menu-featured-item__heading
+                                            | Lorem ipsum dolor
+                                          |                     
+                                        .menu-featured-item__price
+                                            | $18
+                                .col-sm-3
+                                    .menu-featured__item
+                                        .menu-featured-item__img
+                                            img(src='images/240_F_50719277_6PAe43gOA2x9cja7IomJWeEDWF6ZF83B.jpg', alt='...')
+                                          |                     
+                                        h5.menu-featured-item__heading
+                                            | Lorem ipsum dolor
+                                          |                     
+                                        .menu-featured-item__price
+                                            | $32
+      #section_reservation.section_reservation
+              .container
+                  .row
+                      .col-sm-12.col-md-8.col-md-offset-2
+                          h1.section__heading.text-center
+                              | Make online reservation
+                          form.reservation__form
+                              .row
+                                  .col-sm-6
+                                      .form-group
+                                          label.sr-only(for='reservation__name') Full name
+                                          |                     
+                                          input#reservation__name.form-control(placeholder='Full name', type='text')
+                                          |                   
+                                      .form-group
+                                          label.sr-only(for='reservation__phone') Phone number
+                                          |                     
+                                          input#reservation__phone.form-control(placeholder='Phone number', type='tel')
+                                          |                   
+                                      .form-group
+                                          label.sr-only(for='reservation__email') E-mail address
+                                          |                     
+                                          input#reservation__email.form-control(placeholder='E-mail address', type='email')        
+                                  .col-sm-6
+                                      .form-group
+                                          label.sr-only(for='reservation__people') People                     
+                                          select#reservation__people.form-control
+                                              option(value='1') 1 people
+                                              |                       
+                                              option(value='2', selected='') 2 people
+                                              |                       
+                                              option(value='3') 3 people
+                                               |                       
+                                              option(value='4') 4 people
+                                              |                       
+                                              option(value='5') 5 people              
+                                      .form-group
+                                          label.sr-only(for='reservation__date') Date
+                                          |                     
+                                          input#reservation__date.form-control(value='2016-12-31', type='date')
+                                          |                   
+                                      .form-group
+                                          label.sr-only(for='reservation__time') Time
+                                          |                     
+                                          input#reservation__time.form-control(value='18:00', type='time')
+                              .reservation__btn
+                                  span.border
+                                      a.btn(href='#section_reservation')  Reserve a table 
+      #section_events.section_events
+          .container
+              .row
+                  .col-sm-12
+                      h1.section__heading.text-center
+                          | Upcoming events            
+                      p.text-center
+                          | Commodi rem veritatis quis eaque mollitia.
+      .parallax3
+          .container
+              .event-item__content_big.collapse.in
+                  .row
+                      .col-sm-8.col-md-5
+                          time(datetime='2016-06-30')
+                            | June 30, 2016
+                          h3
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea quae!
+                          p
+                            | Alias earum, labore doloremque iusto a modi et, dolorem veritatis iste quis ab. Facere est optio, voluptate molestias aspernatur impedit perferendis odit?
+                          .reservation__btn-event
+                                  span.border
+                                      a.btn(href='#section_reservation')  Reserve a table
+      .section_events
+          .container
+              .event-item__content_small.collapse.in
+                  .row
+                      .col-xs-2.col-sm-1
+                          time(datetime='2016-07-15')
+                              span 15
+                              |  July              
+                      .col-xs-10.col-sm-6
+                          h3
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea quae!                
+                      .col-xs-10.col-xs-offset-2.col-sm-5.text-right
+                          span.border
+                              a.btn(href='#section_reservation')  Reserve a table
+              .event-item__content_small.collapse.in
+                  .row
+                      .col-xs-2.col-sm-1
+                          time(datetime='2016-07-27')
+                              span 27
+                              |  July               
+                      .col-xs-10.col-sm-6
+                          h3
+                              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum voluptas, aut ea quae!                
+                      .col-xs-10.col-xs-offset-2.col-sm-5.text-right
+                          span.border
+                              a.btn(href='#section_reservation')  Reserve a table
+      #section_gallery.section_gallery
+          .container
+                  .row
+                      .col-sm-12.col-md-8.col-md-offset-2
+                          h1.section__heading.text-center
+                              | Our gallery
+                  .row.gallery__grid
+                      .col-sm-4.gallery__item
+                          a(href='images/our_gallery/411.jpg', data-lightbox='gallery')
+                              img.img-responsive(src='images/our_gallery/411.jpg', alt='...')
+                      .col-sm-4.gallery__item
+                          a(href='images/our_gallery/photo_Kulyk_0575_.jpg', data-lightbox='gallery')
+                              img.img-responsive(src='images/our_gallery/photo_Kulyk_0575_.jpg', alt='...')
+                      .col-sm-4.gallery__item
+                          a(href='images/our_gallery/photo_Kulyk_0600_.jpg', data-lightbox='gallery')
+                              img.img-responsive(src='images/our_gallery/photo_Kulyk_0600_.jpg', alt='...')
+                      .col-sm-4.gallery__item
+                          a(href='images/our_gallery/photo_Kulyk_0678_.jpg', data-lightbox='gallery')
+                              img.img-responsive(src='images/our_gallery/photo_Kulyk_0678_.jpg', alt='...')
+                      .col-sm-4.gallery__item
+                          a(href='images/our_gallery/IMG_5824-min1.jpg', data-lightbox='gallery')
+                              img.img-responsive(src='images/our_gallery/IMG_5824-min1.jpg', alt='...')
+                      .col-sm-4.gallery__item
+                          a(href='images/our_gallery/site_MG_58981.jpg', data-lightbox='gallery')
+                              img.img-responsive(src='images/our_gallery/site_MG_58981.jpg', alt='...')
+      #footer.footer
+          .container
+              .row
+                  .col-sm-4
+                      // About Us          
+                      p
+                      | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti dolorum, sint corporis nostrum, possimus unde eos vitae eius quasi saepe.
+                  .col-sm-4
+                      // Contact info
+                      ul.footer__info
+                          li
+                              i.fa.fa-map-marker
+                              |  1234 Ukrane, Lviv, UK 10027-0000           
+                          li
+                              i.fa.fa-phone
+                              |  +1 987 654 3210               
+                          li
+                  .col-sm-4
+                      //Opening hours
+                      .footer__open
+                          .footer-open__days Monday - Thursday
+                          |               
+                          .footer-open__time 10:00 AM - 11:00 PM           
+                      .footer__open
+                          .footer-open__days Friday - Sunday
+                          |               
+                          .footer-open__time 12:00 AM - 03:00 AM
+              .row
+                  .col-sm-12
+                      // Copyright
+                      .footer__copyright
+                          span
+                          |  
+                          i.fa.fa-copyright
+                          |  2017 Baczewski
+
+
+
+
+
+

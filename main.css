@@ -1,0 +1,313 @@
+
+
+body, html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.parallax1, .parallax2, .parallax3 {
+    /* Full height */
+    height: auto;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 100%;
+}
+
+.parallax1 {
+    /* The image used */
+    background-image: url('images/siteIMG_57041.jpg');
+    opacity: 0.7;
+}
+
+.parallax2 {
+    /* The image used */
+    background-image: url('images/site_IMG_6092-min1.jpg');
+}
+
+.parallax3 {
+    /* The image used */
+    background-image: url('images/parallax3.jpg');
+}
+
+li {
+    list-style: none;
+}
+
+.welcome__body {
+    color: #000;
+    position: absolute;
+    text-align: center;
+    top: 30%;
+}
+
+.welcome__title {
+    color: rgba(255, 255, 255, 0.7);
+    font-family: "Lato",sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.welcome__title span{
+    color: #D73C10;
+}
+
+.welcome__heading {
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+    font-family: Tahoma;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+.welcome__info {
+    color: black;
+    font-family: Tahoma;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.welcome__btn {
+    margin-top: 50px;
+}
+
+span.border {
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-family: Tahoma;
+}
+
+span.border > .btn, .reservation__btn > span.border > .btn, .reservation__btn-event {
+    border-radius: 0;
+    border-color: #D73C10;
+    color: white;
+    padding: 2%;
+}
+
+span.border > .btn:hover, .reservation__btn > span.border > .btn:hover, .fa:hover, time, .section_events .btn-default:hover {
+    color: #D73C10;
+}
+
+.welcome__social {
+    display: inline-flex;
+    float: right;
+    margin-right: -260px;
+    margin-top: 40px;
+}
+
+.fa {
+    color: white;
+    letter-spacing: 35px;
+}
+
+div.border {
+    background-color: #111;
+    color: #fff;
+    font-size: 22px;
+    letter-spacing: 10px;
+    padding: 18px;
+}
+
+.section_discover > .container, .section_menu, .section_reservation > .container, .section_events > .container{
+    padding-top: 60px;
+    padding-bottom: 35px;
+}
+
+.discover__img > img {
+    box-shadow: 30px 30px 30px -15px rgba(0, 0, 0, 0.30);
+}
+
+.menu__container, .section_events .col-sm-12 {
+    padding-top: 100px;
+}
+
+.section_menu {
+    background-color:white;
+    text-align:center;
+}
+
+.section_menu h1, .section_reservation h1, .section_events h1, .section_gallery h1 {
+    color: black;
+    font-family: "Playfair Display",sans-serif;;
+    font-size: 26px;
+}
+
+.nav-tabs {
+    border-bottom: none !important;
+    letter-spacing: 45px;
+    padding-bottom: 50px;
+    padding-top: 40px;
+}
+
+.nav-tabs > li {
+    display: inline-flex !important;
+    float: none !important;
+}
+
+.nav-tabs > li > a:hover {
+    color: #D73C10;
+}
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus {
+    color: #D73C10 !important;
+}
+
+.nav-tabs > li > a, .menu-featured__heading {
+    color: black;
+    font-size: 12px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.menu__item {
+    border-bottom: 1px solid #f0f0f0;
+    margin-bottom: 30px;
+    margin-right: 40px;
+    padding-bottom: 20px;
+    padding-right: 40px;
+    position: relative;
+    text-align: left;
+}
+
+.menu-item__title, .menu-item__price, .menu-featured-item__price {
+    font-family: "Playfair Display",sans-serif;
+    font-weight: bolder;
+    color: black;
+}
+
+.menu-item__ingredients, .menu-featured-item__heading, .reservation__info, .section_events p {
+    color: #777;
+}
+
+.menu-item__price {
+    font-size: 18px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.menu__featured > .row {
+    margin-bottom: 50px;
+    margin-top: 25px;
+}
+
+.menu-featured-item__img > img {
+    width: 70%;
+}
+
+#section_reservation {
+    background-color: #f0f0f0;
+}
+
+.col-md-offset-2 > h1 {
+    margin: 10% 0;
+}
+
+.form-control {
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+    color: #555555;
+    display: block;
+    font-size: 15px;
+    height: 43px;
+    line-height: 1.42857;
+    padding: 10px 20px;
+    transition: border-color 0.15s ease-in-out 0s, box-shadow 0.15s ease-in-out 0s;
+    width: 100%;
+}
+
+.reservation__btn {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.reservation__btn > span.border > .btn {
+    color: black;
+}
+
+.section_reservation > .container {
+    padding-top: 80px;
+}
+
+.event-item__content_big .row{
+    padding-top: 150px;
+}
+
+.event-item__content_big time {
+    color: #D73C10;
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.event-item__content_big h3 {
+    color: white;
+    line-height: 1.42857;
+    margin-bottom: 30px;
+    font-family: "Playfair Display",sans-serif;
+}
+
+.event-item__content_big p {
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 30px;
+    line-height: 1.7;
+}
+
+.event-item__content_small .row > [class*="col-"] {
+    display: table-cell;
+    float: none;
+    vertical-align: middle;
+}
+
+.event-item__content_small time, .section_events a.btn, .section_events a.btn {
+    color: black;
+}
+
+.event-item__content_small time > span {
+    display: block;
+    font-family: "Playfair Display",sans-serif;
+    font-size: 36px;
+    font-weight: 400;
+}
+
+.event-item__content_small h3 {
+    font-size: 19px;
+    line-height: 1.42857;
+    font-family: "Playfair Display",sans-serif;
+    font-weight: 500;
+}
+
+.event-item__content_small {
+    margin-bottom: 100px;
+}
+
+.gallery__item {
+    padding: 10px;
+}
+
+.col-sm-4 {
+    width: 33.3333%;
+}
+
+.footer {
+    background-color: #151515;
+    padding: 100px 0;
+    position: relative
+}
